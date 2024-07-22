@@ -1,7 +1,7 @@
 
 <img src="preview/view.jpg">
 
-### [Medico](https://medicoo.vercel.app/) - HTML template ###
+### [Medico](https://medicoo.vercel.app/) - medic HTML template ###
 
 ```
 Features
