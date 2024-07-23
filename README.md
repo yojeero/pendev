@@ -1,5 +1,5 @@
 
-<img src="preview/view.jpg">
+<img src="preview/preview.jpg">
 
 ### [Medico](https://medicoo.vercel.app/) - medic HTML template ###
 
