@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-	<title> Doctor </title>
+	<title> Services </title>
 
 	<meta name="description" content="doctor, dental, medicine" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -29,9 +29,16 @@
 <body>
 
 	<!-- loader svg -->
-	<div class="loader"><svg>
-			<use xlink:href="#svg-loader"></use>
-		</svg></div>
+	<div class="loader">
+		<svg viewBox="0 0 24 24">
+			<style>
+				.spinner_I8Q1 { animation: spinner_qhi1 .75s linear infinite } .spinner_vrS7 { animation-delay: -.375s } @keyframes spinner_qhi1 { 0%, 100% { r: 1.5px } 50% { r: 3px } }
+			</style>
+			<circle class="spinner_I8Q1" cx="4" cy="12" r="1.5" />
+			<circle class="spinner_I8Q1 spinner_vrS7" cx="12" cy="12" r="3" />
+			<circle class="spinner_I8Q1" cx="20" cy="12" r="1.5" />	
+		</svg>
+	</div>
 
 	<div class="page-service">
 
@@ -79,7 +86,7 @@
 							</svg></div>
 					</a>
 
-					<!-- <a href="https://telegram.me/yourname"><div class="telegram"><img src="img/icons/telegram.svg" alt=""></div></a>							            -->
+					<!-- <a href="https://telegram.me/yourname"><div class="telegram"><img src="img/icon.svg/telegram.svg" alt=""></div></a>  -->
 
 				</div>
 
@@ -342,25 +349,12 @@
 	<!-- SVG -->
 	<script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js" onload="svg4everybody({})"	async=""></script>
 
-	<!-- Loader -->
-	<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">
-
-		<symbol id="svg-loader" viewBox="0 0 24 24">
-			<style>
-				.spinner_I8Q1 {animation: spinner_qhi1 .75s linear infinite}
-				.spinner_vrS7 {animation-delay: -.375s}
-				@keyframes spinner_qhi1 {0%,100% {r: 1.5px}	50% {r: 3px} }
-			</style>
-			<circle class="spinner_I8Q1" cx="4" cy="12" r="1.5" />
-			<circle class="spinner_I8Q1 spinner_vrS7" cx="12" cy="12" r="3" />
-			<circle class="spinner_I8Q1" cx="20" cy="12" r="1.5" />
-		</symbol>
-
-	</svg>
-
 	<!-- loader hide -->
-	<script>setTimeout(function () { document.querySelector('.loader').style.display = 'none'; }, 500);</script>
-
+	<script>
+		setTimeout(function () {
+			document.querySelector(".loader").style.display = "none";
+		}, 500);
+	</script>
 
 </body>
 </html>
