@@ -10,7 +10,7 @@ Features
 - Based on CSS Grid Layout
 - Clean and creative multipage design
 - HTML5, CSS3, jQuery, SVG icons 
-- Google Fonts and Map
+- Google Fonts and Yandex Maps
 - Fully responsive layout
 - Compatible with modern browsers
 
