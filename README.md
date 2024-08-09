@@ -3,7 +3,6 @@
 
 ### [Pendev](https://pendev.vercel.app/) - multipage HTML template ###
 
-...........................................
 
 ```
 - Newest CSS Grid Layout
