@@ -7,9 +7,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-	<title> Medico </title>
+	<title> Pendev </title>
 
-	<meta name="description" content="doctor, dental, medicine" />
+	<meta name="description" content="doctor, dental, medicine, corporate" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 	<link rel="icon" type="image/svg+xml" href="img/fav.svg">
@@ -18,8 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link href="https://fonts.googleapis.com/css?family=Poiret+One:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />	
 
 	<!-- style CSS -->
 	<link rel="stylesheet" href="css/style.css" />
@@ -106,43 +105,43 @@
 
 				<ul class="nav ul-home">
 
-					<li class="menu-item"><a href="index.html" target="_self">Home</a></li>
+				<li class="menu-item"><a href="index.html" target="_self">Home</a></li>
 
-					<li class="menu-item"><a href="#">Doctors</a>
-						<ol class="sub-menu">
-							<li class="menu-item"><a href="doctor-1.html" target="_blank">Doctor Yang</a></li>
-							<li class="menu-item"><a href="doctor-2.html" target="_blank">Doctor Yin</a></li>
-						</ol>
-					</li>
+				<li class="menu-item"><a href="#">Doctors</a>
+					<ol class="sub-menu">
+						<li class="menu-item"><a href="doctor-1.html" target="_blank">Doctor Yang</a></li>
+						<li class="menu-item"><a href="doctor-2.html" target="_blank">Doctor Yin</a></li>
+					</ol>
+				</li>
 
-					<li class="menu-item"><a href="service.html" target="_blank">Services</a></li>
-					<li class="menu-item"><a href="price.html" target="_blank">Price</a></li>
-					<li class="menu-item"><a href="client.html" target="_blank">Patients</a></li>
-					<li class="menu-item"><a class="link_to" href="#contact">Contact</a></li>
+				<li class="menu-item"><a href="service.html" target="_blank">Services</a></li>
+				<li class="menu-item"><a href="price.html" target="_blank">Price</a></li>
+				<li class="menu-item"><a href="client.html" target="_blank">Clients</a></li> 
+				<li class="menu-item"><a class="link_to" href="#contact">Contact</a></li>				
 
-					<li class="top_fav">
+				<div class="top_fav">
 
-						<a href="https://twitter.com/" target="_blank">
-							<svg>
-								<use xlink:href="img/icon.svg#twitter" />
-							</svg>
-						</a>
+					<a href="https://twitter.com/" target="_blank"> 
+						<svg>
+							<use xlink:href="img/icon.svg#twitter" />
+						</svg>
+					</a>			
 
-						<a href="https://vimeo.com/" target="_blank">
-							<svg>
-								<use xlink:href="img/icon.svg#vimeo" />
-							</svg>
-						</a>
+					<a href="https://vimeo.com/" target="_blank">
+						<svg>
+							<use xlink:href="img/icon.svg#vimeo" />
+						</svg>
+					</a>			
 
-						<a href="https://pinterest.com/" target="_blank">
-							<svg>
-								<use xlink:href="img/icon.svg#pinterest" />
-							</svg>
-						</a>
+					<a href="https://pinterest.com/" target="_blank">
+						<svg>
+							<use xlink:href="img/icon.svg#pinterest" />
+						</svg>
+					</a>
 
-					</li>
+				</div>
 
-					<li class="nav_foot">© Clinic «Medico», New York</li>
+				<li class="nav_foot">© Clinic «Medico», New York</li>
 
 				</ul>
 
@@ -150,13 +149,9 @@
 
 		</header>
 
-		<!--hero-->
+			<!--top pic-->
 
-		<section class="hero">
-
-			<img src="img/top.webp" alt />
-
-		</section>
+		<section class="page_pic"></section>
 
 		<!-- service -->
 
@@ -503,17 +498,17 @@
 
 					<a href="index.html" target="_self"><img src="img/logo_2.png" alt></a>
 
-					<h3>Medico<span>medicine clinic </span></h3>
+					<h3>Medico<span>&#169; 2022. Medico</span></h3>
 
 				</div>
 
 				<div class="copyright">
 
-					<p><a href="service.html" target="_blank">services</a><a href="price.html"
-							target="_blank">price</a><a class="mailtoui" href="mailto:your-email@gmail.com"
-							target="_blank">my review</a><a class="link_to" href="#contact">contact</a></p>
-
-					<p>&#169; 2022. Medico</p>
+					<p><a href="service.html" target="_blank">services</a>
+						<a href="price.html" target="_blank">price</a>
+						<a class="mailtoui" href="mailto:your-email@gmail.com"
+							target="_blank">my review</a>
+						<a class="link_to" href="#contact">contact</a></p>
 
 				</div>
 
@@ -553,17 +548,25 @@
 
 			<div class="up">
 
-				<div class="svg_cicle spin">
-					<svg class="paused">
-						<use xlink:href="img/icon.svg#up" />
-					</svg>
+				<div class="svg_cicle">
+					<svg><use xlink:href="img/icon.svg#up" /></svg>
 				</div>
 
 			</div>
 
 		</footer>
 
-	</div><!-- end page -->
+	</div><!-- end page -->	
+	
+		<!-- SVG -->
+	<script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js" onload="svg4everybody({})"	async></script>
+
+	<!-- loader hide -->
+	<script>
+		setTimeout(function () {
+			document.querySelector(".loader").style.display = "none";
+		}, 500);
+	</script>
 
 	<!-- yandex maps -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
@@ -576,22 +579,6 @@
 
 	<!-- all main js -->
 	<script src="js/script.js"></script>
-
-	<!-- SVG -->
-	<script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js" onload="svg4everybody({})"	async></script>
-
-	<!-- loader hide -->
-	<script>
-		setTimeout(function () {
-			document.querySelector(".loader").style.display = "none";
-		}, 500);
-	</script>
-
-	<!-- slider -->
-	<script>
-		var $slides, interval, currentIndex, nextIndex, cycle = function (a) { nextIndex = void 0 !== a ? a : nextIndex; var b = $($slides.get(currentIndex)), c = $($slides.get(nextIndex)); b.removeClass("active").css("z-index", "0"); c.addClass("active").css("z-index", "1"); currentIndex = void 0 !== a ? nextIndex : currentIndex < $slides.length - 1 ? currentIndex + 1 : 0; nextIndex = currentIndex + 1 < $slides.length ? currentIndex + 1 : 0 };
-		$(function () { currentIndex = 0; nextIndex = 1; $slides = $(".slide"); $slides.first().addClass("active"); interval = window.setInterval(cycle, 6E3) });							
-	</script>
 
 	<!-- yandex maps jQuery -->
 	<script>
