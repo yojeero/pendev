@@ -157,13 +157,6 @@ header
 	grid-column : 2/2;
 }
 
-.logo div span
-{
-	font-size : .875rem;
-
-	display : grid;
-}
-
 .tel ,
 .chat
 {
@@ -333,6 +326,7 @@ ol.sub-menu
 	max-width : 980px;
 
 	margin-top : 1px; 
+	margin-bottom : 8px;
 
 	list-style-type : none;
 
@@ -340,7 +334,6 @@ ol.sub-menu
 	transform : rotateX(-90deg);
 	transform-origin : top;
 
-	border-bottom : solid 1px #000;
 	border-bottom-right-radius : 3px;
 	border-bottom-left-radius : 3px;
 	background : #fff;
@@ -368,8 +361,16 @@ ol.sub-menu a:visited
 
 ol.sub-menu li
 {
-	border : solid 1px #000;
 	margin-top : 1px;	
+	margin-bottom : 4px;
+}
+
+ol.sub-menu .menu-item ,
+ol.sub-menu .menu-item:hover ,
+ol.sub-menu .menu-item:active
+{
+	border : solid 1px #000;
+	border-bottom : solid 1px #000;
 }
 
 ol.sub-menu li:before
@@ -380,7 +381,6 @@ ol.sub-menu li:before
 .menu-item:hover .sub-menu
 {
 	z-index : 990;
-
 	transform : rotateX(0deg);
 }
 
@@ -410,8 +410,8 @@ ol.sub-menu li:before
 	align-items : center;
 	justify-content : center;
 
-    margin-left: 2rem;
-    margin-bottom: 5px;  
+	margin-bottom : 5px;
+	margin-left : 2rem;
 }
 
 .top_fav svg
@@ -592,7 +592,7 @@ ol.sub-menu li:before
 	object-fit : cover;
 }
 
-/*  pacient  */
+/*  clients  */
 
 .pacient_area
 {
@@ -1952,7 +1952,7 @@ td:nth-child(1)
 	text-align : left;
 }
 
-/*  PAGE PACIENT  */
+/*  PAGE CLIENTS  */
 
 .page-client
 {
@@ -2190,158 +2190,151 @@ td:nth-child(1)
 
 {
 
-header,
-.top,
+header ,
+.top ,
 .tel
 .logo
-{    
-    grid-template-columns: 1fr;
+{
+	grid-template-columns : 1fr;
+	padding : 0;
 }
 
 header
 {
-    height: 110px;
-    padding: 0;
-
-    background: #fff;
+	height : 100px;
+	padding : 0;
 }
 
 .top
 {
-    width: 100vw;
-
-    grid-template-columns: repeat(3,1fr);
+	width : 100vw;
+	grid-template-columns : repeat(3,1fr);
 }
 
 .logo
 {
-   place-items: center;
-   grid-column: 1;
+	grid-column : 1;
+	place-items : center;
 }
 
 .logo img
 {
-   display: none;
+	display : none;
 }
 
 .logo div
-{  
-  display: grid;
+{
+	display : grid;
 }
 
 .chat
 {
-   grid-column: 2;
+	grid-column : 2;
 }
 
 .tel
 {
-  display: none;
+	display : none;
 }
 
-/*  hamburger  */
+/*  hamburger MOBILE */
 
 .navicon
 {
-    position: absolute;
-    z-index: 9999;
-    top: 2.5rem;
-    right: 3.2rem;
+	position : absolute;
+	z-index : 9999;
+	top : 2.5rem;
+	right : 3.2rem;
 
-    display: grid;
+	display : grid;
 
-    width: 32px;
-    height: 30px;
+	width : 32px;
+	height : 30px;
 
-    margin: auto;
+	margin : auto;
 
-    cursor: pointer;
+	cursor : pointer;
 
-    grid-column: 3;
+	grid-column : 3;
 }
 
-.hamburger,
+.hamburger ,
 .hamburger::before
 {
-    transition: all .2s ease-in-out;
-}
-
-.hamburger:nth-child(2),
+	transition : all .2s ease-in-out;
+} 
+.hamburger:nth-child(2) ,
 .hamburger:nth-child(2)::before
 {
-    transition: all .2s ease-in-out .1s;
-}
-
-.hamburger:nth-child(3),
+	transition : all .2s ease-in-out .1s;
+} 
+.hamburger:nth-child(3) ,
 .hamburger:nth-child(3)::before
 {
-    transition: all .2s ease-in-out .2s;
-}
-
-.navicon.active .hamburger,
+	transition : all .2s ease-in-out .2s;
+} 
+.navicon.active .hamburger ,
 .navicon.active .hamburger::before
 {
-    transition: all .2s ease-in-out .2s;
-}
-
-.navicon.active .hamburger:nth-child(2),
+	transition : all .2s ease-in-out .2s;
+} 
+.navicon.active .hamburger:nth-child(2) ,
 .navicon.active .hamburger:nth-child(2)::before
 {
-    transition: all .2s ease-in-out .1s;
-}
-
-.navicon.active .hamburger:nth-child(3),
+	transition : all .2s ease-in-out .1s;
+} 
+.navicon.active .hamburger:nth-child(3) ,
 .navicon.active .hamburger:nth-child(3)::before
 {
-    transition: all .2s ease-in-out 0s;
+	transition : all .2s ease-in-out 0s;
 }
 
 .hamburger
 {
-    width: 32px;
-    height: 3px;
+	width : 32px;
+	height : 3px;
 
-    margin: auto 0;
+	margin : auto;
 
-    list-style-type: none;
+	list-style-type : none;
 
-    border-radius: 2px;
-    background: #000;
+	border-radius : 2px;
+	background : #000;
 }
 
 .hamburger::before
 {
-    position: absolute;
-    left: -8px;
+	position : absolute;
+	left : -8px;
 
-    display: block;
+	display : block;
 
-    width: 4px;
-    height: 4px;
+	width : 4px;
+	height : 4px;
 
-    content: '';
+	content : '';
 
-    border-radius: 3px;
-    background: #000;
+	border-radius : 3px;
+	background : #000;
 }
 
 .hamburger:nth-child(3)
 {
-    width: 24px;
-    margin-right: 8px;
+	width : 24px;
+	margin-right : 8px;
 }
 
 .navicon.active .hamburger
 {
-    width: 0;
+	width : 0;
 }
 
 .navicon.active .hamburger::before
 {
-    left: 12px;
+	left : 12px;
 }
 
-/*  nav fullscreen  */
+/*  nav fullscreen RESPONSIVE MOBILE */
 
 .menu
 {
@@ -2355,8 +2348,8 @@ header
 	width : 100%;
 	max-width : 100vw;
 	height : 100vh;
-    
-	padding-bottom : 110px;
+
+	padding-bottom : 100px;
 
 	transition : all 500ms cubic-bezier(.68, -.55, .265, 1.55);
 	transform : scale(1);
@@ -2370,17 +2363,14 @@ header
 
 .menu.open
 {
-    left: 0;
-   
-
-    opacity: 1;
+	left : 0;
+	opacity : 1;
 }
 
 .menu.open ul li
 {
-    transform: translateX(0);
-
-    opacity: 1;
+	transform : translateX(0);
+	opacity : 1;
 }
 
 .nav li:before ,
@@ -2389,106 +2379,78 @@ header
 	content : '';
 }
 
-.menu-item,
+.menu-item ,
 .menu-item.active
 {
-    display: flex;
-    flex-direction: column;
+	display : flex;
+	flex-direction : column;
 
-    width: 60%;
+	width : 100%;
 
-    border-bottom: none;
+	border-bottom : none;
 }
 
 .menu-item a
 {
-    display: inline-grid;
-
-    padding: .4rem 0;
-}
-
-.menu-item:hover
-{   
-    border-bottom: none;
+	display : inline-grid;
+	padding : .6rem 0;
 }
 
 .menu-item a:hover
-{   
-    transition: transform .5s linear;
-    border-bottom: 1px solid #000;
+{
+	transition : transform .5s linear;
 }
 
 ol.sub-menu
 {
-    position: relative;
+	position : relative;
 
-    min-width: 100%;
-    max-width: 100vw;
+	min-width : 100%;
+	max-width : 100vw;
 
-    transition: none;
-    transform: none;
-    transform-origin: none;
+	transition : none;
+	transform : none;
+	transform-origin : none;
 
-    border-bottom-right-radius: none;
-    border-bottom-left-radius: none;
-    background: transparent;
-    box-shadow: none;
-}
-
-ol.sub-menu .menu-item a
-{
-    color: #000;
-}
-
-ol.sub-menu li:hover
-{
-    background: transparent;
-}
-
-ol.sub-menu a:hover,
-ol.sub-menu a:visited
-{
-    font-weight: 400;
-    color: #000;
+	border-bottom-right-radius : none;
+	border-bottom-left-radius : none;
 }
 
 ol.sub-menu .menu-item
 {
-    display: flex;
-    flex-direction: column;
+	display : flex;
+	flex-direction : column;
 
-    width: 100%;
-    margin-left: .5rem;
-
-    border-bottom: none;
+	width : 100%;
 }
 
 ul.nav
 {
-    display: inline-grid;
-    visibility: visible;
+	display : inline-grid;
+	visibility : visible;
 
-    height: 70vh;
-    padding: 6rem 2rem;
+	height : 70vh;
+	padding : 6rem 2rem;
 }
 
 ul.nav li.nav_foot
 {
-    font-size: .8rem;
+	font-size : .8rem;
 
-    display: inline-grid;  
+	display : inline-grid;
 }
 
-.menu .top_fav
+.top_fav
 {
-    display: flex; 
+	justify-content : flex-start;
 
-    padding: 2rem 0 2.5rem .5rem;
+	margin-left : -8px;
+	padding : 3rem 0;
 }
 
-/*  end nav fullscreen on click  */
+/*  end nav fullscreen RESPONSIVE MOBILE  */
 
-/*  responsive hero  */
+/*  RESPONSIVE HERO  */
 
 .hero
 {
@@ -2503,335 +2465,348 @@ ul.nav li.nav_foot
 	object-fit : cover;
 }
 
-/*  responisve service  */
+/*  responisve home MOBILE  */
 
 .service_area
 {
-    margin: 2rem 0;
-    padding: 0 2rem;
+	width : 90vw;
+	
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .service_card
 {
-    grid-template-rows: auto auto auto;
+	grid-template-rows : auto auto auto;
 }
 
 .service_card h1
 {
-    font-size: 1.424rem;
+	font-size : 1.424rem;
 }
 
 .service_link
 {
-    grid-column: 1;
-    width: 90vw;
+	width : 90vw;
+
+	grid-column : 1;
 }
 
 .doctor_area
 {
-    padding: 1rem 0;
+	padding : 1rem 0;
 }
 
 .doctor
 {
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .profile
-{    
-    margin: 1rem 0; 
+{
+	margin : 1rem 0;
 }
 
 .pacient_area
 {
-    margin: 2rem 0;
-    padding: 0 2rem;
+	width : 90vw;
+	
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .pacient_card
 {
-    display: grid;
+	display : grid;
 
-    grid-template-columns: auto;
-    grid-template-rows: 60px auto;
+	grid-template-columns : auto;
+	grid-template-rows : 60px auto;
 }
 
 .about
 {
-    padding: 0 1rem;
-    grid-template-columns: 1fr;
+	width : 90vw;
+
+	padding : 0 1rem;
+
+	grid-template-columns : 1fr;
 }
 
 .txt
 {
-    width: 90%;
+	width : 90%;
 }
 
 footer
-{  
-    margin: 0;  
+{
+	margin : 0;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .form_area
 {
-    min-height: 400px;
-    grid-row: 1;  
+	min-height : 400px;
+
+	grid-row : 1;
 }
 
-.form_area input,
-.form_area textarea,
+.form_area input ,
+.form_area textarea ,
 #submit
 {
-    width: 80%;
+	width : 80%;
 }
 
 .brand
 {
-    margin-top: 2rem ;
-    margin-bottom: 2rem;
+	margin-top : 2rem ;
+	margin-bottom : 2rem;
 }
 
 .brand_logo
 {
-    width: 80%;
+	width : 80%;
 }
 
 .brand_logo img
 {
-    width: 100px;
-    height: 100px;
+	width : 100px;
+	height : 100px;
 }
 
 .brand_logo h3
 {
-    font-size: 1.75rem;
+	font-size : 1.75rem;
 }
 
 .copyright
 {
-    width: 100%;
-    max-width: 90vw;
+	width : 100%;
+	max-width : 90vw;
 
-    padding: 1rem;
+	padding : 1rem;
 }
 
 .copyright a
 {
-    padding: 0 .25rem;
+	padding : 0 .25rem;
 }
 
 .copy_fav
 {
-    display: none;
+	display : none;
 }
 
 .up
 {
-    right: .5rem;
+	right : .5rem;
 }
 
-/*  RESPONSIVE PAGE SERVICE  */
+/*  responsive PAGE SERVICE MOBILE */
 
 .main_service
 {
-    margin: 2rem 0;
-    padding: 0 2rem;
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    gap: 1rem;
-
-    grid-template-columns: 1fr;
+	gap : 1rem;
+	grid-template-columns : 1fr;
 }
 
 .icon_list
 {
-    left: 1.5rem;
+	left : 1.5rem;
 }
   
-/*  RESPONSIVE PAGE DOCTOR  */
+/*  responsive PAGE DOCTOR MOBILE  */
 
 .timeline
-{    
-    margin: 2rem 0;
-    padding: 0 2rem;
+{
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .timeline img
 {
-    display: grid;
+	display : grid;
 
-    margin: 1rem;
-    padding: 0;
+	margin : 1rem;
+	padding : 0;
 }
 
 .tree
 {
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
-.tree::before 
-{  
-   left: 1rem;
+.tree::before
+{
+	left : 1rem;
 }
 
-.timeline h2,
-.timeline h3.pro,
+.timeline h2 ,
+.timeline h3.pro ,
 .timeline h5
 {
-    display: block;
+	line-height : 1;
 
-    padding-left: 1rem;
+	display : block;
 
-    line-height: 1;
+	padding-left : 1rem;
 
-    text-align: left;
+	text-align : left;
 }
 
 .timeline-content h3
 {
-    line-height: .9;
+	line-height : .9;
 }
 
 .timeline-right
 {
-    justify-items: start;
-    grid-column: 1/1;
+	grid-column : 1/1;
+	justify-items : start;
 }
 
 .timeline-left
 {
-    justify-items: start;
-    grid-column: 1/1;
+	grid-column : 1/1;
+	justify-items : start;
 }
 
-.timeline-right-0,
+.timeline-right-0 ,
 .timeline-left-0
 {
-    display: none;
+	display : none;
 }
 
 .marker-r
 {
-    left: .5rem;
-    margin-right: -10px;
+	left : .5rem;
+
+	margin-right : -10px;
 }
 
 .marker-l
 {
-    left: 1rem;
+	left : 1rem;
 }
 
 .tree div:nth-child(even) > .timeline-content
 {
-    width: 80%;
-    margin-top: 0;
-    padding: 0 2rem;
+	width : 80%;
+	margin-top : 0;
+	padding : 0 2rem;
 
-    text-align: left;
+	text-align : left;
 }
 
 .diploma
 {
-    padding: 4rem 2rem ;
+	padding : 4rem 2rem ;
 
-    grid-template-columns: repeat(2,1fr);
-    gap: .25rem;
+	gap : .25rem;
+	grid-template-columns : repeat(2,1fr);
 }
 
 .diploma img
-{
-    width: 200px;
-
-    margin: 0;
+{	
+	width : 200px;
+	margin : 0;
 }
 
-/*  RESPONSIVE PAGE PRICE  */
+/*  RESPONSIVE PAGE PRICE MOBILE  */
 
 .price_title
 {
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .price_title img
 {
-    display: none;
+	display : none;
 }
 
 .price_info
 {
-    padding: 3rem;
+	padding : 3rem;
 }
 
 .price
 {
-    position: relative;
-    z-index: 0;
+	position : relative;
+	z-index : 0;
 
-    width: 90vw;
+	width : 90vw;
 }
 
 a.accordion
 {
-    font-size: .825rem;
-    line-height: 1;
+	font-size : .825rem;
+	line-height : 1;
 
-    padding: 1.5rem 2rem;
+	padding : 1.5rem 2rem;
 }
 
 .price tr
 {
-    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns : 1fr 1fr 1fr;
 }
 
 table
 {
-    line-height: 1.3;
+	line-height : 1.3;
 }
 
 th
 {
-    padding: .6rem;
+	padding : .6rem;
 }
 
 td
 {
-    padding: .4rem;
+	padding : .4rem;
 }
 
-/*  RESPONSIVE PAGE PACIENT  */
+/*  responsive PAGE CLIENTS MOBILE  */
 
 .client_label
 {
-    margin-top: 2rem;
-    padding: 0 2rem;
+	margin-top : 2rem;
+	padding : 0 2rem;
 
-    text-align: center;
+	text-align : left;
 
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-columns: 1fr;
+	column-gap : 0;
+	grid-template-columns : 1fr;
+	row-gap : 0;
 }
 
 .client_label h3
-{   
-    line-height: 1;
+{
+	line-height : 1;
 }
 
-.client_label img.rule_img
+.client_label img
 {
-    display: none;    
+	display : none;
 }
 
 .client_info div
 {
-    gap: 0 .5rem;
+	gap : 0 .5rem;
+}
+
+.client
+{
+	width : 80vw;
 }
 
 }
@@ -2839,615 +2814,612 @@ td
 /* END MOBILE RESPONSIVE */
 
 
- /*  RESPONSIVE TABLET    */
+ /*  RESPONSIVE TABLET  */
 
   @media only screen and (min-width: 40.063em) and (max-width: 64em) 
   /* min-width 641px and max-width 1024px, use tablet-only  */
 
 {
 
-header,
-.top,
+header ,
+.top ,
 .tel
 .logo
-{    
-    grid-template-columns: 1fr;
+{
+	grid-template-columns : 1fr;
 }
 
 header
 {
-    height: 110px;
-    padding: 0;
-
-    background: #fff;
+	height : 100px;
+	padding : 0;
 }
 
 .top
 {
-    width: 100vw;
-    
-    grid-template-columns: repeat(3,1fr);
+	width : 100vw;
+
+	grid-template-columns : repeat(3,1fr);
 }
 
 .logo
 {
-   place-items: center;
-   grid-column: 1;
+	grid-column : 1;
+	place-items : center;
 }
 
 .logo img
 {
-   display: none;
+	display : none;
 }
 
 .logo div
-{  
-  display: grid;
+{
+	display : grid;
 }
 
 .chat
 {
-   grid-column: 2;
+	grid-column : 2;
 }
 
 .tel
 {
-  display: none;
+	display : none;
 }
 
-/*  hamburger  */
+/*  hamburger TABLET */
 
 .navicon
 {
-    position: absolute;
-    z-index: 9999;
-    top: 2.5rem;
-    right: 3.2rem;
+	position : absolute;
+	z-index : 9999;
+	top : 2.5rem;
+	right : 3.2rem;
 
-    display: grid;
+	display : grid;
 
-    width: 32px;
-    height: 30px;
+	width : 32px;
+	height : 30px;
 
-    margin: auto;
+	margin : auto;
 
-    cursor: pointer;
+	cursor : pointer;
 
-    grid-column: 3;
+	grid-column : 3;
 }
 
-.hamburger,
+.hamburger ,
 .hamburger::before
 {
-    transition: all .2s ease-in-out;
+	transition : all .2s ease-in-out;
 }
 
-.hamburger:nth-child(2),
+.hamburger:nth-child(2) ,
 .hamburger:nth-child(2)::before
 {
-    transition: all .2s ease-in-out .1s;
+	transition : all .2s ease-in-out .1s;
 }
 
-.hamburger:nth-child(3),
+.hamburger:nth-child(3) ,
 .hamburger:nth-child(3)::before
 {
-    transition: all .2s ease-in-out .2s;
+	transition : all .2s ease-in-out .2s;
 }
 
-.navicon.active .hamburger,
+.navicon.active .hamburger ,
 .navicon.active .hamburger::before
 {
-    transition: all .2s ease-in-out .2s;
+	transition : all .2s ease-in-out .2s;
 }
 
-.navicon.active .hamburger:nth-child(2),
+.navicon.active .hamburger:nth-child(2) ,
 .navicon.active .hamburger:nth-child(2)::before
 {
-    transition: all .2s ease-in-out .1s;
+	transition : all .2s ease-in-out .1s;
 }
 
-.navicon.active .hamburger:nth-child(3),
+.navicon.active .hamburger:nth-child(3) ,
 .navicon.active .hamburger:nth-child(3)::before
 {
-    transition: all .2s ease-in-out 0s;
+	transition : all .2s ease-in-out 0s;
 }
 
 .hamburger
 {
-    width: 32px;
-    height: 3px;
+	width : 32px;
+	height : 3px;
 
-    margin: auto 0;
+	margin : auto 0;
 
-    list-style-type: none;
+	list-style-type : none;
 
-    border-radius: 2px;
-    background: #000;
+	border-radius : 2px;
+	background : #000;
 }
 
 .hamburger::before
 {
-    position: absolute;
-    left: -8px;
+	position : absolute;
+	left : -8px;
 
-    display: block;
+	display : block;
 
-    width: 4px;
-    height: 4px;
+	width : 4px;
+	height : 4px;
 
-    content: '';
+	content : '';
 
-    border-radius: 3px;
-    background: #000;
+	border-radius : 3px;
+	background : #000;
 }
 
 .hamburger:nth-child(3)
 {
-    width: 24px;
-    margin-right: 8px;
+	width : 24px;
+	margin-right : 8px;
 }
 
 .navicon.active .hamburger
 {
-    width: 0;
+	width : 0;
 }
 
 .navicon.active .hamburger::before
 {
-    left: 12px;
+	left : 12px;
 }
 
-/*  nav fullscreen on click  */
+/*  nav fullscreen RESPONSIVE TABLET  */
 
 .menu
 {
-    position: fixed;
-    z-index: 6000;
-    top: 0;
-    left: -100vw;
+	position : fixed;
+	z-index : 6000;
+	top : 0;
+	left : -100vw;
 
-    display: grid;
+	display : grid;
 
-    width: 100%;
-    max-width: 100vw;
-    height: 100vh;
+	width : 100%;
+	max-width : 100vw;
+	height : 100vh;
 
-    padding-bottom: 100px;
+	padding-bottom : 100px;
 
-    transition: all 500ms cubic-bezier(.68, -.55, .265, 1.55);
-    transform: scale(1);
-    text-align: left;
+	transition : all 500ms cubic-bezier(.68, -.55, .265, 1.55);
+	transform : scale(1);
+	text-align : left;
 
-    opacity: 0;
-    background: #fff;
+	opacity : 0;
+	background : #fff;
 
-    place-items: center;
+	place-items : center;
 }
 
 .menu.open
 {
-    left: 0;
-
-    opacity: 1;
+	left : 0;
+	opacity : 1;
 }
 
 .menu.open ul li
 {
-    transform: translateX(0);
-
-    opacity: 1;
+	transform : translateX(0);
+	opacity : 1;
 }
 
-.menu-item, .menu-item.active
+.nav li:before ,
+.nav li:first-child:before
 {
-    display: flex;
-    flex-direction: column;
+	content : '';
+}
 
-    width: 60%;
-    border-bottom: none;  
+.menu-item ,
+.menu-item.active
+{
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+
+	border-bottom : none;
 }
 
 .menu-item a
 {
-    display: inline-grid;
-
-    padding: .4rem 0;
-}
-
-.menu-item:hover
-{   
-    border-bottom: none;
+	display : inline-grid;
+	padding : .6rem 0;
 }
 
 .menu-item a:hover
-{   
-    transition: transform .5s linear;
-    border-bottom: 1px solid #000;
+{
+	transition : transform .5s linear;
 }
 
 ol.sub-menu
 {
-    position: relative;
+	position : relative;
 
-    min-width: 100%;
-    max-width: 100vw;
+	min-width : 100%;
+	max-width : 100vw;
 
-    transition: none;
-    transform: none;
-    transform-origin: none;
+	transition : none;
+	transform : none;
+	transform-origin : none;
 
-    border-bottom-right-radius: none;
-    border-bottom-left-radius: none;
-    background: transparent;
-    box-shadow: none;
-}
-
-ol.sub-menu li:hover
-{
-    background: transparent;
-}
-
-ol.sub-menu a:hover,
-ol.sub-menu a:visited
-{
-    font-weight: 400;
-    color: #000;
+	border-bottom-right-radius : none;
+	border-bottom-left-radius : none;
 }
 
 ol.sub-menu .menu-item
 {
-    display: flex;
-    flex-direction: column;
+	display : flex;
+	flex-direction : column;
 
-    width: 100%;
-    border-bottom: none;  
-    margin-left: .5rem;
+	width : 100%;
 }
 
 ul.nav
 {
-    display: inline-grid;
-    visibility: visible;
+	display : inline-grid;
+	visibility : visible;
 
-    height: 70vh;
-    padding: 6rem 2rem;
+	height : 70vh;
+	padding : 6rem 2rem;
 }
 
 ul.nav li.nav_foot
 {
-    font-size: .8rem;
+	font-size : .8rem;
 
-    display: inline-grid;    
+	display : inline-grid;
 }
 
-.menu .top_fav
+.top_fav
 {
-    display: flex; 
+	justify-content : flex-start;
 
-    padding: 2rem 0 2.5rem .5rem;
+	margin-left : -8px;
+	padding : 3rem 0;
 }
 
-/*  end nav fullscreen on click  */
+/*  end nav fullscreen RESPONSIVE TABLET  */
+
+/*  responisve home TABLET  */
 
 .service_area
 {
-    width: 90vw;
-    margin: 2rem auto;
+	width : 90vw;
 
-    grid-template-columns: repeat(2,44vw);
+	margin : 2rem auto;
+	padding : 0 2rem;
+
+	grid-template-columns : repeat(2,44vw);
 }
 
 .service_card
 {
-    grid-template-rows: auto auto auto;
+	grid-template-rows : auto auto auto;
 }
 
 .service_card h1
 {
-    font-size: 1.424rem;
+	font-size : 1.424rem;
 }
 
 .service_link
 {
-    width: 90vw;
+	width : 90vw;
 
-    grid-column: 1;
+	grid-column : 1;
 }
 
 .doctor_area
 {
-    padding: 1rem 0;
+	padding : 1rem 0;
 }
 
 .profile
-{    
-    margin: 1rem 0;
+{
+	margin : 1rem 0;
 }
 
 .pacient_area
 {
-    margin: 0;
-    padding: 0 2rem;
+	width : 90vw;
+	
+	margin : 0;
+	padding : 0 4rem;
 
-    grid-template-columns: repeat(2,44vw);
+	grid-template-columns : repeat(2,44vw);
 }
 
 .pacient_area h3
 {
-   padding-top: 1rem;
+	padding-top : 2rem;
 }
 
 .pacient_card
 {
-    display: grid;
+	display : grid;
 
-    grid-template-columns: auto;
-    grid-template-rows: 60px auto;
+	grid-template-columns : auto;
+	grid-template-rows : 60px auto;
 }
 
 .about_area
 {
-    padding: 1rem 0;
+	padding : 1rem 0;
 }
 
 .about
 {
-    padding: 0 1rem;
-    grid-template-columns: repeat(2,44vw); 
+	width : 90vw;
+	
+	padding : 0 1rem;
+
+	grid-template-columns : repeat(2,44vw);
 }
 
 .txt
 {
-    width: 90%;
+	width : 90%;
 }
 
 footer
-{  
-    margin: 0; 
+{
+	margin : 0;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .form_area
 {
-    min-height: 400px;
-    grid-row: 1;   
+	min-height : 400px;
+
+	grid-row : 1;
 }
 
-.form_area input,
-.form_area textarea,
+.form_area input ,
+.form_area textarea ,
 #submit
 {
-    width: 50%;
+	width : 50%;
 }
 
 .brand
 {
-    margin-top: 4rem;
+	margin-top : 4rem;
 
-    grid-template-columns: auto auto;
+	grid-template-columns : auto auto;
 }
 
 .brand_logo
 {
-    width: 50%;
+	width : 50%;
 }
 
 .brand_logo h3
 {
-    padding: 0;
+	padding : 0;
 }
 
 .copyright
 {
-    width: 70%;
+	width : 70%;
 
-    margin-left: 40%;
-    
-    padding-bottom: 3rem;
+	margin-left : 40%;
+	padding-bottom : 3rem;
 }
 
 .up
 {
-    right: 1rem;
+	right : 1rem;
 }
 
-/*  responsive PAGE SERVICE  */
+/*  responsive PAGE SERVICE TABLET   */
 
 .main_service
 {
-    margin: 2rem 0;
-    padding: 0 2rem;
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    gap: 1rem;
-
-    grid-template-columns: 1fr;
+	gap : 1rem;
+	grid-template-columns : 1fr;
 }
 
 .icon_list
 {
-    left: 1.5rem;
+	left : 1.5rem;
 }
   
-/*  responsive PAGE DOCTOR  */
+/*  responsive PAGE DOCTOR TABLET   */
 
 .timeline
-{    
-    margin: 2rem 0;
-    padding: 0 2rem;
+{
+	margin : 2rem 0;
+	padding : 0 2rem;
 
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
 .timeline img
 {
-    display: grid;
+	display : grid;
 
-    margin: 1rem;
-    padding: 0;
+	margin : 1rem;
+	padding : 0;
 }
 
 .tree
 {
-    grid-template-columns: 1fr;
+	grid-template-columns : 1fr;
 }
 
-.tree::before 
-{  
-   left: 1rem;
+.tree::before
+{
+	left : 1rem;
 }
 
-.timeline h2,
-.timeline h3.pro,
+.timeline h2 ,
+.timeline h3.pro ,
 .timeline h5
 {
-    display: block;
+	line-height : 1;
 
-    padding-left: 1rem;
+	display : block;
 
-    line-height: 1;
+	padding-left : 1rem;
 
-    text-align: left;
+	text-align : left;
 }
 
 .timeline-content h3
 {
-    line-height: .9;
+	line-height : .9;
 }
 
 .timeline-right
 {
-    justify-items: start;
-    grid-column: 1/1;
+	grid-column : 1/1;
+	justify-items : start;
 }
 
 .timeline-left
 {
-    justify-items: start;
-    grid-column: 1/1;
+	grid-column : 1/1;
+	justify-items : start;
 }
 
-.timeline-right-0,
+.timeline-right-0 ,
 .timeline-left-0
 {
-    display: none;
+	display : none;
 }
 
 .marker-r
 {
-    left: .5rem;
-    margin-right: -10px;
+	left : .5rem;
+
+	margin-right : -10px;
 }
 
 .marker-l
 {
-    left: 1rem;
+	left : 1rem;
 }
 
 .tree div:nth-child(even) > .timeline-content
 {
-    width: 80%;
-    margin-top: 0;
-    padding: 0 2rem;
+	width : 80%;
 
-    text-align: left;
+	margin-top : 0;
+	padding : 0 2rem;
+
+	text-align : left;
 }
 
 .diploma
 {
-    padding: 4rem 2rem ;
+	padding : 4rem 2rem ;
 
-    grid-template-columns: repeat(2,1fr);
-    gap: .25rem;
+	gap : .25rem;
+	grid-template-columns : repeat(2,1fr);
 }
 
 .diploma img
 {
-    width: 200px;
+	width : 200px;
 
-    margin: 0
+	margin : 0
 }
 
-/*  responsive PAGE PRICE  */
+/*  responsive PAGE PRICE TABLET   */
 
 .price_title
 {
-    grid-template-columns: 1fr
+	grid-template-columns : 1fr
 }
 
 .price_title img
 {
-    display: none;
+	display : none;
 }
 
 .price_info
 {
-    padding: 3rem;
+	padding : 3rem;
 }
 
 .price
 {
-    position: relative;
-    z-index: 0;
+	position : relative;
+	z-index : 0;
 
-    width: 90vw;
+	width : 90vw;
 }
 
 a.accordion
 {
-    font-size: .825rem;
-    line-height: 1;
+	font-size : .825rem;
+	line-height : 1;
 
-    padding: 1.5rem 2rem;
+	padding : 1.5rem 2rem;
 }
 
 .price tr
 {
-    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns : 1fr 1fr 1fr;
 }
 
 table
 {
-    line-height: 1.3;
+	line-height : 1.3;
 }
 
 th
 {
-    padding: .6rem;
+	padding : .6rem;
 }
 
 td
 {
-    padding: .4rem;
+	padding : .4rem;
 }
 
-/*  responsive PAGE PACIENT  */
+/*  responsive PAGE CLIENTS TABLET   */
 
 .client_label
 {
-    margin-top: 2rem;
-    padding: 0 2rem;
+	margin-top : 2rem;
+	padding : 0 2rem;
 
-    text-align: center;
+	text-align : left;
 
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-columns: 1fr;
+	column-gap : 0;
+	grid-template-columns : 1fr;
+	row-gap : 0;
 }
 
 .client_label h3
-{   
-    line-height: 1;
+{
+	line-height : 1;
 }
 
-.client_label img.rule_img
+.client_label img
 {
-    display: none;    
+	display : none;
 }
 
 .client_info div
 {
-    gap: 0 .5rem;
+	gap : 0 .5rem;
+}
+
+.client
+{
+	width : 80vw;
 }
 
 }
