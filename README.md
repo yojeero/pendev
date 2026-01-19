@@ -1,4 +1,4 @@
-<img src="preview/git.webp">
+<img src="preview/preview.jpg" width="830">   
 
 ### [Pendev](https://pendev.vercel.app/) is a modern, responsive website for a dental clinic designed to present medical services, doctors, pricing, and contact information in a clear and professional way.
 
