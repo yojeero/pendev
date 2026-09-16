@@ -6,35 +6,35 @@
 ## Features:
 
 ### Responsive layout
-Optimized for desktop, tablet, and mobile devices.
+- Optimized for desktop, tablet, and mobile devices.
 
 ### Service catalog
-Clear presentation of dental services with icons and descriptions.
+- Clear presentation of dental services with icons and descriptions.
 
 ### Doctor profiles
-Individual pages for specialists with photos and qualifications.
+- Individual pages for specialists with photos and qualifications.
 
 ### Patient benefits section
-Highlights warranties, safety, equipment quality, and consultations.
+- Highlights warranties, safety, equipment quality, and consultations.
 
 ### Testimonials slider
-Interactive patient reviews to build trust.
+- Interactive patient reviews to build trust.
 
 ### Interactive map (Yandex Maps)
-Displays clinic location with custom marker and info window.
+- Displays clinic location with custom marker and info window.
 
 ### Contact & appointment form
-Simple form for patient inquiries and pre-registration.
+- Simple form for patient inquiries and pre-registration.
 
 ### Modern UI elements
 
-Page loader animation   
-Smooth navigation   
-Mobile hamburger menu   
-Lightbox image preview   
+- Page loader animation   
+- Smooth navigation   
+- Mobile hamburger menu   
+- Lightbox image preview   
 
 ### Social media integration
-Links to WhatsApp and social platforms.   
+- Links to WhatsApp and social platforms.   
 
 ### Tech Stack   
 ```
