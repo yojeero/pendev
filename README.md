@@ -1,42 +1,21 @@
-<img src="preview/pendev.jpg" width="100%" max-width="800px">   
+<img src="preview/pendev.jpg" width="100%">   
 
-# [Pendev](https://pendev.vercel.app/) is a modern, responsive website for a dental clinic designed to present medical services, doctors, pricing, and contact information in a clear and professional way.
+<img src="https://img.shields.io/badge/Pendev-7678ed?style=for-the-badge" width="40%" alt="Pendev">   
 
+> Pendev - Just fork the project and customize it. 
 
-## Features:
+- Doctor profiles    
+- Service catalog     
+- Responsive Design     
+- Modern UI elements   
+- Testimonials slider     
+- Patient benefits section   
+- Social media integration   
+- Interactive map (Yandex)  
+- Contact & appointment form   
+- Cloud & Static Hosting Ready   
 
-### Responsive layout
-- Optimized for desktop, tablet, and mobile devices.
-
-### Service catalog
-- Clear presentation of dental services with icons and descriptions.
-
-### Doctor profiles
-- Individual pages for specialists with photos and qualifications.
-
-### Patient benefits section
-- Highlights warranties, safety, equipment quality, and consultations.
-
-### Testimonials slider
-- Interactive patient reviews to build trust.
-
-### Interactive map (Yandex Maps)
-- Displays clinic location with custom marker and info window.
-
-### Contact & appointment form
-- Simple form for patient inquiries and pre-registration.
-
-### Modern UI elements
-
-- Page loader animation   
-- Smooth navigation   
-- Mobile hamburger menu   
-- Lightbox image preview   
-
-### Social media integration
-- Links to WhatsApp and social platforms.   
-
-### Tech Stack   
+#### Tech Stack   
 ```
-HTML5 | CSS3 | Vercel | PHP | Vanilla JS   
+HTML5 | CSS3 | PHP | Vanilla JS   
 ```
