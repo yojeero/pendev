@@ -2,7 +2,8 @@
 
 <img src="https://img.shields.io/badge/Pendev-7678ed?style=for-the-badge" width="40%" alt="Pendev">   
 
-> Pendev - Just fork the project and customize it. 
+> [!NOTE]
+> Features 🧼    
 
 - Doctor profiles    
 - Service catalog     
